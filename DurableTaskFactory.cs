@@ -67,7 +67,6 @@ namespace NateTorious.Durability
             where T : class, new()
         {
             return this.CreateTaskAsync(callbackTarget.Method, value);
-
         }
 
         /// <summary>
