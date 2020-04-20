@@ -30,7 +30,7 @@ namespace NateTorious.Durability
     /// <remarks>
     /// This class is thread-safe.
     /// </remarks>
-    public class DurableTaskFactory
+    public sealed class DurableTaskFactory
     {
         private readonly IAmazonSQS queueClient;
         private readonly string queueUri;
